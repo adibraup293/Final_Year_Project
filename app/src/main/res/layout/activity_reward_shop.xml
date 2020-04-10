@@ -57,7 +57,7 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/bg_btn"
         android:text="Redeem this reward"
-        android:textColor="#000000"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rewardShop" />
@@ -70,7 +70,7 @@
         android:background="@drawable/bg_btn"
         android:onClick="back"
         android:text="Back"
-        android:textColor="#000000"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

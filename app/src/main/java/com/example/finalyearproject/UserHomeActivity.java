@@ -47,7 +47,7 @@ public class UserHomeActivity extends AppCompatActivity {
 
         String username = getIntent().getStringExtra("username");
         TextView userText = findViewById(R.id.userNameTextView);
-        String welcomeMsg = "Welcome back " + username;
+        String welcomeMsg = "Welcome back " + username + "!";
         userText.setText(welcomeMsg);
     }
 }

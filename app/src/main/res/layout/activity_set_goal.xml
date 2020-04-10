@@ -61,7 +61,7 @@
         android:layout_marginTop="40dp"
         android:background="@drawable/bg_btn"
         android:text="Auto-generate a goal"
-        android:textColor="#000000"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -84,22 +84,22 @@
         app:layout_constraintTop_toBottomOf="@+id/autoGenBtn"
         tools:targetApi="jelly_bean" />
 
-    <EditText
+    <TextView
         android:id="@+id/GoalText"
-        android:layout_width="300dp"
-        android:layout_height="30dp"
-        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:background="@drawable/rounded_edit_text"
-        android:ems="10"
-        android:importantForAutofill="no"
-        android:inputType="none"
-        android:text="@android:string/unknownName"
+        android:fontFamily="@font/gothammedium"
+        android:gravity="center_horizontal"
+        android:text="Unknown"
         android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/FinalGoalTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/FinalGoalTextView"
+        tools:targetApi="jelly_bean" />
 
     <Button
         android:id="@+id/saveBtn"
@@ -108,9 +108,9 @@
         android:layout_marginTop="100dp"
         android:background="@drawable/bg_btn"
         android:text="Save changes"
-        android:textColor="#000000"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.153"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/GoalText" />
 
@@ -121,9 +121,9 @@
         android:layout_marginTop="100dp"
         android:background="@drawable/bg_btn"
         android:text="Start over"
-        android:textColor="#000000"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintHorizontal_bias="0.619"
         app:layout_constraintStart_toEndOf="@+id/saveBtn"
         app:layout_constraintTop_toBottomOf="@+id/GoalText" />
 
@@ -135,7 +135,7 @@
         android:background="@drawable/bg_btn"
         android:onClick="back"
         android:text="Back"
-        android:textColor="#000000"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

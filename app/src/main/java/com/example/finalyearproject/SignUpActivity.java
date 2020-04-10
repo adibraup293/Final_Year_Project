@@ -51,4 +51,8 @@ public class SignUpActivity extends AppCompatActivity {
         nameEditText = findViewById(R.id.nameEditText);
         emailEditText = findViewById(R.id.emailEditText);
     }
+
+    public void back(View view) {
+        finish();
+    }
 }

@@ -61,4 +61,8 @@ public class LoginActivity extends AppCompatActivity {
 
         databaseHelper = new DatabaseHelper(this);
     }
+
+    public void back(View view) {
+        finish();
+    }
 }
