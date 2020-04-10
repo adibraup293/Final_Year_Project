@@ -56,7 +56,7 @@
         android:id="@+id/loginFBBtn"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="28dp"
         android:background="@drawable/bg_btn"
         android:text="Login with Facebook"
         android:textColor="#FFFFFF"
@@ -80,8 +80,23 @@
         app:layout_constraintTop_toTopOf="parent"
         android:gravity="center_horizontal" />
 
+
     <Button
-        android:id="@+id/backBtn"
+        android:id="@+id/signUpBtn1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="108dp"
+        android:background="@drawable/bg_btn"
+        android:onClick="openSignUpPage"
+        android:text="Sign Up"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/logInBtn"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="40dp"

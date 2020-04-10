@@ -1,5 +1,6 @@
 package com.example.finalyearproject;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -34,6 +35,12 @@ public class SignUpActivity extends AppCompatActivity {
             Toast.makeText(this, "User profile created successfully", Toast.LENGTH_SHORT).show();
             finish();
 
+    }
+
+    public void openLoginPage(View view)
+    {
+        Intent intent = new Intent(SignUpActivity.this, LoginActivity.class);
+        startActivity(intent);
     }
 
     @Override
