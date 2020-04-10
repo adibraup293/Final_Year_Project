@@ -36,9 +36,9 @@ public class LoginActivity extends AppCompatActivity {
             Toast.makeText(this, "Logging in as " + username, Toast.LENGTH_SHORT).show();
             //Officer Logged in successfully
 
-            Intent adminHomeIntent = new Intent(LoginActivity.this, UserHomeActivity.class);
-            adminHomeIntent.putExtra("username", username);
-            startActivity(adminHomeIntent);
+            Intent userHomeIntent = new Intent(LoginActivity.this, UserHomeActivity.class);
+            userHomeIntent.putExtra("username", username);
+            startActivity(userHomeIntent);
             //
 
         } else {
