@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginActivity"
-    android:background="@color/colorPrimaryDark">
+    android:background="@drawable/gradient_wallpaper">
 
     <EditText
         android:id="@+id/usernameEditText"
@@ -44,14 +44,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="104dp"
         android:background="@drawable/bg_btn"
+        android:onClick="LoginButtonUser"
         android:text="Login"
-        android:textAlignment="center"
         android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passwordEditText"
-        android:gravity="center_horizontal" />
+        app:layout_constraintTop_toBottomOf="@+id/passwordEditText" />
 
     <Button
         android:id="@+id/loginFBBtn"
