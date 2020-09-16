@@ -25,6 +25,7 @@ public class SignUpActivity extends AppCompatActivity {
     DatabaseHelper databaseHelper;
 
     public void addUser(View view) {
+
         User user = new User();
         user.setUsername(usernameEditText.getText().toString().trim());
         user.setPassword(passwordEditText.getText().toString().trim());

@@ -12,11 +12,6 @@ import androidx.annotation.Nullable;
 
 import com.example.finalyearproject.User;
 
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Locale;
 
 public class DatabaseHelper extends SQLiteOpenHelper{
     // Logcat tag
