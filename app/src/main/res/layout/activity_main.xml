@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_img"
-
+    android:background="@drawable/wallpaper_home"
     tools:context=".MainActivity">
 
     <Button
@@ -42,7 +41,7 @@
         android:id="@+id/greetingsTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="50dp"
         android:fontFamily="@font/gothammedium"
         android:text="Welcome to ModerEat"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"

@@ -24,7 +24,72 @@ public class SignUpActivity extends AppCompatActivity {
 
     DatabaseHelper databaseHelper;
 
+    private Boolean validateUsername(){
+        String validateUName = usernameEditText.getText().toString();
+
+        if(validateUName.isEmpty()){
+            usernameEditText.setError("Field cannot be empty!");
+            return false;
+        }else if (validateUName.length() >=20){
+            usernameEditText.setError("Username too long!");
+            return false;
+        }else {
+            usernameEditText.setError(null);
+            return true;
+        }
+    }
+
+    private Boolean validateEmail(){
+        String validateEmail = emailEditText.getText().toString();
+        String emailRequirements = "[a-zA-z0-9._-]+@[a-z]+\\.+[a-z]+";
+
+        if (validateEmail.isEmpty()){
+            emailEditText.setError("Email cannot be empty!");
+            return false;
+        } else if (!validateEmail.matches(emailRequirements)){
+            emailEditText.setError("Invalid email address");
+            return false;
+        } else {
+            emailEditText.setError(null);
+            return true;
+        }
+    }
+
+    private Boolean validateName(){
+        String validateName = nameEditText.getText().toString();
+
+        if(validateName.isEmpty()){
+            nameEditText.setError("Name cannot be empty!");
+            return false;
+        }else{
+            nameEditText.setError(null);
+            return true;
+        }
+    }
+
+    private Boolean validatePassword(){
+        String validatePassword = passwordEditText.getText().toString();
+        String passwordValidator = "^"+
+                "(?=.*[a-zA-Z])" +      //any letter
+                "(?=.*[@#$%^&+=])" +    // at least 1 special character
+                "(?=\\s+$)" +           //no white spaces
+                ".{4,}" +               //at least 4 characters
+                "$";
+
+        if (validatePassword.isEmpty()){
+            passwordEditText.setError("Password cannot be empty");
+            return false;
+        } else{
+            passwordEditText.setError(null);
+            return true;
+        }
+    }
+
     public void addUser(View view) {
+
+        if (!validateUsername() | !validateEmail() | !validateName() | !validatePassword()){
+            return;
+        }
 
         User user = new User();
         user.setUsername(usernameEditText.getText().toString().trim());
