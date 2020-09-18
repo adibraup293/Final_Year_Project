@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".UserHomeActivity"
-    android:background="@drawable/gradient_wallpaper">
+    android:background="@drawable/wallpaper_userhome">
 
     <Button
         android:id="@+id/connectToFBBtn"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:background="@drawable/bg_btn"
+        android:background="@drawable/bg_btn_fb"
         android:text="Connect To Facebook"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
@@ -99,7 +99,7 @@
         android:gravity="center_horizontal"
         android:text="Welcome back!"
         android:textAlignment="center"
-        android:textColor="#FFFFFF"
+        android:textColor="#000000"
         android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"

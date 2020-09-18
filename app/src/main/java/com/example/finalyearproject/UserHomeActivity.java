@@ -37,6 +37,8 @@ public class UserHomeActivity extends AppCompatActivity {
     }
 
     public void back(View view) {
+        Intent intent = new Intent(UserHomeActivity.this, LoginActivity.class);
+        startActivity(intent);
         finish();
     }
 
