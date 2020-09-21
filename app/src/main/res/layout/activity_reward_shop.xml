@@ -23,32 +23,28 @@
         android:gravity="center_horizontal"
         tools:targetApi="jelly_bean" />
 
-    <TextView
-        android:id="@+id/PointsBalanceTextView"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/checkPointsBtn"
+        android:layout_width="260dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:fontFamily="@font/gothammedium"
-        android:gravity="center_horizontal"
-        android:text="You have xxx points"
-        android:textAlignment="center"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_btn"
+        android:text="Check your points balance"
         android:textColor="#FFFFFF"
-        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/RewardShopTextView"
-        tools:targetApi="jelly_bean" />
+        app:layout_constraintTop_toBottomOf="@+id/RewardShopTextView" />
 
     <ListView
         android:id="@+id/rewardShop"
         android:layout_width="match_parent"
         android:layout_height="400dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:background="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/PointsBalanceTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/checkPointsBtn" />
 
     <Button
         android:id="@+id/redeemBtn"
@@ -63,7 +59,7 @@
         app:layout_constraintTop_toBottomOf="@+id/rewardShop" />
 
     <Button
-        android:id="@+id/logInBtn"
+        android:id="@+id/backBtn"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="40dp"
