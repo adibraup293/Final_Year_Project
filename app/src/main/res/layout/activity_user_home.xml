@@ -82,7 +82,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="40dp"
         android:background="@drawable/bg_btn"
-        android:onClick="back"
+        android:onClick="logout"
         android:text="Logout"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -106,5 +106,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:targetApi="jelly_bean" />
+
+<!--    <com.facebook.login.widget.LoginButton-->
+<!--        android:id="@+id/loginFBBtn"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:background="@drawable/bg_btn_fb"-->
+<!--        android:text="Login with Facebook"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/friendListBtn" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

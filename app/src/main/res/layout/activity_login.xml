@@ -54,18 +54,33 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/passwordEditText" />
 
-    <Button
+<!--    <Button-->
+<!--        android:id="@+id/loginFBBtn"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:background="@drawable/bg_btn_fb"-->
+<!--        android:text="Login with Facebook"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.504"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/loginTextDescription" />-->
+
+
+    <com.facebook.login.widget.LoginButton
         android:id="@+id/loginFBBtn"
         android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/usernameEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginTextDescription"
         android:background="@drawable/bg_btn_fb"
         android:text="Login with Facebook"
         android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginTextDescription" />
+        />
 
     <TextView
         android:id="@+id/loginTextView"

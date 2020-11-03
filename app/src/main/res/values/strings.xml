@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">ModerEat</string>
+
+    <string name="facebook_app_id">367212481290975</string>
+    <string name="fb_login_protocol_scheme">fb367212481290975</string>
+
 </resources>
