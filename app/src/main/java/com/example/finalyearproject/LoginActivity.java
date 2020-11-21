@@ -58,6 +58,10 @@ public class LoginActivity extends AppCompatActivity {
             startActivity(userHomeIntent);
 
 
+        } else if (username == "admin" && password == "admin" || username == "Admin" && password == "Admin") {
+            Intent userHomeIntent = new Intent(LoginActivity.this, AdminHomeActivity.class);
+            startActivity(userHomeIntent);
+
         } else {
             Toast.makeText(this, "No user found. Please create an account!", Toast.LENGTH_LONG).show();
             //User Logged in failed.

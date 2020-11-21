@@ -4,4 +4,18 @@
     <string name="facebook_app_id">367212481290975</string>
     <string name="fb_login_protocol_scheme">fb367212481290975</string>
 
+    <string-array name="challenges">
+        <item>Eat one vegetable at lunch/dinner</item>
+        <item>Eat fruit for breakfast</item>
+        <item>Eat a healthy protein for dinner/lunch</item>
+        <item>Eat a fiber-filled breakfast</item>
+        <item>Eat a healthy salad for lunch</item>
+        <item>Do not eat after 8 p.m.</item>
+        <item>Drink tea instead of soda</item>
+        <item>Consume brown rice instead of white rice</item>
+        <item>Eat fruit for breakfast</item>
+        <item>Eat large boiled potatoes</item>
+        <item>Drink at least 11.5 cups of water</item>
+    </string-array>
+
 </resources>

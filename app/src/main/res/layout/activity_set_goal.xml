@@ -23,35 +23,36 @@
         android:gravity="center_horizontal"
         tools:targetApi="jelly_bean" />
 
-    <EditText
-        android:id="@+id/enterGoalText"
-        android:layout_width="300dp"
-        android:layout_height="30dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="40dp"
-        android:background="@drawable/rounded_edit_text"
-        android:ems="10"
-        android:hint="Enter goal here..."
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/SetGoalTextView" />
+<!--    <EditText-->
+<!--        android:id="@+id/enterGoalText"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:background="@drawable/rounded_edit_text"-->
+<!--        android:ems="10"-->
+<!--        android:hint="Enter goal here..."-->
+<!--        android:textAlignment="center"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.495"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/SetGoalTextView" />-->
 
     <TextView
         android:id="@+id/AutoGenGoalTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="56dp"
         android:fontFamily="@font/gothammedium"
         android:gravity="center_horizontal"
-        android:text="Or generate a goal here:"
+        android:text="Auto generate a goal by clicking the button:"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/enterGoalText"
+        app:layout_constraintTop_toBottomOf="@+id/SetGoalTextView"
         tools:targetApi="jelly_bean" />
 
     <Button
@@ -60,6 +61,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:background="@drawable/bg_btn"
+        android:onClick="generateUserGoal"
         android:text="Auto-generate a goal"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
@@ -74,7 +76,7 @@
         android:layout_marginTop="40dp"
         android:fontFamily="@font/gothammedium"
         android:gravity="center_horizontal"
-        android:text="Your final goal is:"
+        android:text="Your goal is:"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
@@ -120,6 +122,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:background="@drawable/bg_btn"
+        android:onClick="Reset"
         android:text="Start over"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
@@ -131,7 +134,7 @@
         android:id="@+id/logInBtn"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="80dp"
         android:background="@drawable/bg_btn"
         android:onClick="back"
         android:text="Back"
