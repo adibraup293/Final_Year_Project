@@ -48,18 +48,18 @@ public class LoginActivity extends AppCompatActivity {
         //authenticate User
         User currentUser = databaseHelper.loginUser(new User(username, password));
 
+        if (username == "admin" && password == "admin" || username == "Admin" && password == "Admin") {
+            Intent userHomeIntent = new Intent(LoginActivity.this, AdminHomeActivity.class);
+            startActivity(userHomeIntent);
+        }
+
         //check if authentication is successful or not
-        if (currentUser != null) {
+        else if (currentUser != null) {
             Toast.makeText(this, "Logging in as " + username, Toast.LENGTH_SHORT).show();
             //User Logged in successfully
 
             Intent userHomeIntent = new Intent(LoginActivity.this, UserHomeActivity.class);
             userHomeIntent.putExtra("username", username);
-            startActivity(userHomeIntent);
-
-
-        } else if (username == "admin" && password == "admin" || username == "Admin" && password == "Admin") {
-            Intent userHomeIntent = new Intent(LoginActivity.this, AdminHomeActivity.class);
             startActivity(userHomeIntent);
 
         } else {

@@ -7,12 +7,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Random;
 
 public class SetGoalActivity extends AppCompatActivity {
 
     String randomChallenge;
+    DatabaseHelper databaseHelper;
 
     public void generateUserGoal(View view){
         Context context = this;
@@ -21,6 +23,18 @@ public class SetGoalActivity extends AppCompatActivity {
         TextView generateGoal = findViewById(R.id.GoalText);
 
         generateGoal.setText(randomChallenge);
+
+        Challenge challenge = new Challenge();
+        challenge.setChallenge(generateGoal.getText().toString().trim());
+        challenge.setDuration(7);
+        challenge.setProgress(0);
+
+        if (generateGoal.getText().toString().trim() == null || generateGoal.getText().toString().trim() == ""){
+            Toast.makeText(this, "Please generate a challenge!", Toast.LENGTH_SHORT).show();
+        }
+        databaseHelper.addChallenge(challenge);
+        Toast.makeText(this, "Challenge successfully saved", Toast.LENGTH_SHORT).show();
+        finish();
 
     }
 
@@ -41,6 +55,8 @@ public class SetGoalActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_set_goal);
+
+        databaseHelper = new DatabaseHelper(this);
 
     }
 }

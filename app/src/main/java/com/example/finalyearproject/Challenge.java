@@ -7,6 +7,10 @@ public class Challenge {
     private int progress;
     private int duration;
 
+    public Challenge(){
+
+    }
+
     public String getChallenge() {
         return challenge;
     }
